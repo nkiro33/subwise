@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Replace Reddit search RSS feeds (search.rss) after November 13, 2026</title>
+<meta name="description" content="Reddit search RSS feeds stop on November 13, 2026. How to keep following Reddit searches for keywords, brands or topics, with filters and notifications.">
+<link rel="canonical" href="https://nkiro33.github.io/subwise/replace-reddit-search-rss.html">
+<link rel="icon" href="img/favicon-32.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Replace Reddit search RSS feeds (search.rss) after November 13, 2026">
+<meta property="og:description" content="Reddit search RSS feeds stop on November 13, 2026. How to keep following Reddit searches for keywords, brands or topics, with filters and notifications.">
+<meta property="og:url" content="https://nkiro33.github.io/subwise/replace-reddit-search-rss.html">
+<meta property="og:image" content="https://nkiro33.github.io/subwise/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="img/icon.svg" alt="">Subwise</a>
+  <nav><a href="reddit-rss-alternative.html">Reddit RSS is gone</a><a href="replace-reddit-search-rss.html">Search feeds</a><a href="reddit-keyword-alerts.html">Keyword alerts</a><a href="import-reddit-feeds.html">Import</a><a href="support.html">Help</a></nav>
+</div></header>
+<article><div class="narrow">
+<h1>Replace your Reddit search RSS feeds</h1>
+<p class="meta">Updated 2026-10-15</p>
+<p>Search feeds were the most useful Reddit RSS trick: put <code>reddit.com/search.rss?q=your+keyword&amp;sort=new</code> in your reader and every new post that mentions it shows up. They stop working on November 13, 2026 with the rest of Reddit RSS (<a href="https://www.reddit.com/r/modnews/comments/1wubgvt/continuing_our_infrastructure_updates_whats/">Reddit’s announcement in r/modnews</a>). Here’s how to keep them.</p>
+
+<h2>Move your search feeds to Subwise</h2>
+<div class="cta"><a class="btn primary" aria-disabled="true" title="In store review">Add to Chrome · in review</a><a class="btn primary" aria-disabled="true" title="In store review">Add to Edge · in review</a><a class="btn primary" aria-disabled="true" title="In store review">Add to Firefox · in review</a></div>
+<ol class="steps">
+<li>Log in to Reddit in your browser and install Subwise.</li>
+<li>Copy your search feed addresses from your reader (or export its OPML file) and paste them into Subwise’s welcome page or Settings → Import. A search inside one subreddit (<code>/r/x/search.rss?q=…&amp;restrict_sr=on</code>) stays inside that subreddit; a search without <code>restrict_sr</code> covers all of Reddit, exactly as before.</li>
+<li>Or add new ones: in the reader, click <b>+</b> → <b>Search</b>, type the words, and optionally a subreddit.</li>
+<li>Turn on notifications for the searches you don’t want to miss.</li>
+</ol>
+
+<h2>Search syntax that works</h2>
+<table>
+<tr><th>You type</th><th>Finds</th></tr>
+<tr><td><code>"rss reader"</code></td><td>The exact phrase</td></tr>
+<tr><td><code>feedly OR inoreader</code></td><td>Either word</td></tr>
+<tr><td><code>homelab -crypto</code></td><td>homelab, but not posts that mention crypto</td></tr>
+<tr><td><code>subreddit:selfhosted backup</code></td><td>backup, only in r/selfhosted</td></tr>
+<tr><td><code>title:launch</code></td><td>Words in the title only</td></tr>
+</table>
+<p>On top of Reddit’s search, each Subwise feed can filter again on its own: words that must appear or must not, flairs, minimum score or comments.</p>
+
+<h2>Need more than search feeds?</h2>
+<p>Subwise Pro adds <a href="reddit-keyword-alerts.html">keyword alerts</a>: one alert can watch several keywords across Reddit search <i>and</i> every feed you follow, then notify you, post to Discord or Slack, push to your phone through ntfy, or start an n8n or Zapier flow.</p>
+</div></article>
+<footer><div class="wrap">
+  <span>© 2026 Cedar Labs</span>
+  <a href="privacy.html">Privacy</a>
+  <a href="support.html">Support</a>
+  <a href="https://github.com/nkiro33/subwise/issues">Report a problem</a>
+  <span>Subwise is not affiliated with, endorsed by, or sponsored by Reddit, Inc.</span>
+</div></footer>
+</body>
+</html>

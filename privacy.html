@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Subwise privacy policy</title>
+<meta name="description" content="What the Subwise browser extension reads, stores and sends.">
+<link rel="canonical" href="https://nkiro33.github.io/subwise/privacy.html">
+<link rel="icon" href="img/favicon-32.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Subwise privacy policy">
+<meta property="og:description" content="What the Subwise browser extension reads, stores and sends.">
+<meta property="og:url" content="https://nkiro33.github.io/subwise/privacy.html">
+<meta property="og:image" content="https://nkiro33.github.io/subwise/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="img/icon.svg" alt="">Subwise</a>
+  <nav><a href="reddit-rss-alternative.html">Reddit RSS is gone</a><a href="replace-reddit-search-rss.html">Search feeds</a><a href="reddit-keyword-alerts.html">Keyword alerts</a><a href="import-reddit-feeds.html">Import</a><a href="support.html">Help</a></nav>
+</div></header>
+<article><div class="narrow"><h1>Subwise privacy policy</h1>
+<p><i>Last updated: October 15, 2026</i></p>
+<p>Subwise is a browser extension that shows new posts from the Reddit communities, users and searches you choose to follow. It runs entirely in your browser. Subwise has no servers of its own, no accounts and no analytics.</p>
+<h2>What Subwise reads</h2>
+<ul>
+<li><b>Reddit pages and feeds you follow.</b> Subwise requests the Reddit listings for the subreddits, users, multireddits, searches and (if you add them) your own saved posts or inbox, from your browser, using your existing logged-in Reddit session. Your browser attaches its own Reddit cookies to these requests. Subwise never sees, asks for or stores your Reddit password, and it does not read your Reddit cookies itself.</li>
+<li><b>Whether you are logged in to Reddit</b>, and your Reddit username, so it can pause while you are logged out and read your own saved/inbox feeds if you follow them.</li>
+<li><b>The address of the current tab, only on reddit.com</b>, when you open the Subwise popup, to offer a “Follow” button for the page you are on.</li>
+</ul>
+<h2>What Subwise stores (on your device only)</h2>
+<ul>
+<li>The list of feeds you follow, their filters and your settings, in the browser's extension storage.</li>
+<li>For each post it finds: the title, link, subreddit, author name, score, comment count, flair, time, a short text snippet (at most 280 characters) and a thumbnail address. It does not store full post texts, images or videos.</li>
+<li>Posts are deleted automatically after 30 days (you can change this), except posts you star. You can delete everything from Settings → General, or by removing the extension.</li>
+<li>If you buy Pro: your license key and the email address Gumroad returns for it.</li>
+</ul>
+<h2>What Subwise sends, and to whom</h2>
+<ul>
+<li><b>Reddit (reddit.com):</b> the requests described above, at a low rate that you control in Settings.</li>
+<li><b>Gumroad (gumroad.com):</b> only if you activate a Pro license. Subwise sends your license key and the product ID to Gumroad's license-check service when you activate it, and again about every 3 days, to confirm the purchase is valid. Payments are handled by Gumroad under <a href="https://gumroad.com/privacy">Gumroad's privacy policy</a>.</li>
+<li><b>Webhooks you add (Pro, optional):</b> if you add a webhook (for example Discord, Slack, ntfy or your own n8n server) and choose which feeds or alerts use it, Subwise sends the title, Reddit link, subreddit, author, score, comment count, time and a snippet of at most 200 characters of each new matching post to that address. Nothing is sent to webhooks unless you set them up.</li>
+</ul>
+<p>Subwise does not sell, rent or share data with anyone else, does not track your browsing, does not show ads and does not use your data for any purpose other than showing you your feeds.</p>
+<h2>Permissions, explained</h2>
+<ul>
+<li><b>Access to www.reddit.com:</b> to read the feeds you follow through your session.</li>
+<li><b>Access to api.gumroad.com:</b> to check a Pro license key.</li>
+<li><b>Optional access to other sites:</b> requested only when you add a webhook, and only for that webhook's address.</li>
+<li><b>Storage / unlimited storage:</b> to keep your feeds and stored posts on your device.</li>
+<li><b>Alarms:</b> to check your feeds on a schedule. <b>Idle:</b> to pause checks while your computer is locked.</li>
+<li><b>Notifications:</b> to tell you about new posts and keyword matches, when you turn that on.</li>
+<li><b>Context menus:</b> to add “Follow this in Subwise” to the right-click menu on Reddit pages.</li>
+<li><b>Side panel</b> (Chrome and Edge): to show the reader beside the page.</li>
+</ul>
+<h2>Children</h2>
+<p>Subwise is not directed at children under 13.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted at the same address with a new date.</p>
+<h2>Contact</h2>
+<p>Questions or requests: <a href="https://nkiro33.github.io/subwise/support.html">https://nkiro33.github.io/subwise/support.html</a></p>
+<p>Subwise is an independent tool. It is not affiliated with, endorsed by, or sponsored by Reddit, Inc.</p></div></article>
+<footer><div class="wrap">
+  <span>© 2026 Cedar Labs</span>
+  <a href="privacy.html">Privacy</a>
+  <a href="support.html">Support</a>
+  <a href="https://github.com/nkiro33/subwise/issues">Report a problem</a>
+  <span>Subwise is not affiliated with, endorsed by, or sponsored by Reddit, Inc.</span>
+</div></footer>
+</body>
+</html>

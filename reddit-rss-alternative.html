@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reddit RSS is gone: how to keep following subreddits (2026)</title>
+<meta name="description" content="Reddit stops its RSS feeds on November 13, 2026. What still works, the options compared (Feedly, self-hosting, extensions), and a step-by-step way to keep your subreddit feeds.">
+<link rel="canonical" href="https://nkiro33.github.io/subwise/reddit-rss-alternative.html">
+<link rel="icon" href="img/favicon-32.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Reddit RSS is gone: how to keep following subreddits (2026)">
+<meta property="og:description" content="Reddit stops its RSS feeds on November 13, 2026. What still works, the options compared (Feedly, self-hosting, extensions), and a step-by-step way to keep your subreddit feeds.">
+<meta property="og:url" content="https://nkiro33.github.io/subwise/reddit-rss-alternative.html">
+<meta property="og:image" content="https://nkiro33.github.io/subwise/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Reddit RSS is gone: how to keep following subreddits","datePublished":"2026-10-15","dateModified":"2026-10-15","author":{"@type":"Organization","name":"Cedar Labs"}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="img/icon.svg" alt="">Subwise</a>
+  <nav><a href="reddit-rss-alternative.html">Reddit RSS is gone</a><a href="replace-reddit-search-rss.html">Search feeds</a><a href="reddit-keyword-alerts.html">Keyword alerts</a><a href="import-reddit-feeds.html">Import</a><a href="support.html">Help</a></nav>
+</div></header>
+<article><div class="narrow">
+<h1>Reddit RSS is gone: how to keep following subreddits</h1>
+<p class="meta">Updated 2026-10-15 · 6 minute read</p>
+<p>If you follow subreddits in Feedly, Inoreader, NetNewsWire or any other feed reader, your Reddit feeds stop on <b>November 13, 2026</b>. Here’s what Reddit announced, what still works, and the practical ways to keep reading the communities you follow.</p>
+
+<h2>What Reddit announced</h2>
+<ul>
+  <li><b>RSS ends on November 13, 2026.</b> Reddit says RSS had become a common channel for large-scale scraping. For RSS outside a community you moderate, it says there is no replacement (<a href="https://www.reddit.com/r/modnews/comments/1wubgvt/continuing_our_infrastructure_updates_whats/">Reddit’s announcement in r/modnews</a>; <a href="https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/">TechCrunch</a>; <a href="https://decrypt.co/379892/reddit-killing-rss-feeds-public-api-access-ai-scrapers">Decrypt</a>).</li>
+  <li><b>Private feeds are not spared.</b> The announcement makes no exception for the personal saved, inbox and front-page feeds with a <code>feed=</code> token, so plan for those to stop too.</li>
+  <li><b>The public API is closing.</b> No new API access requests after October 31, 2026; access starts closing for unregistered apps and users on January 12, 2027; the remaining public API closes in March 2027 (<a href="https://www.reddit.com/r/redditdev/comments/1wubcvf/moving_data_api_apps_to_the_developer_platform/">r/redditdev</a>).</li>
+  <li><b>Old Reddit already needs a login,</b> and will soon be limited to accounts that used it in the last six months.</li>
+  <li><b>Logged-in reading is not affected.</b> When Reddit shut its logged-out <code>.json</code> pages in May 2026, it said logged-in access was unaffected (<a href="https://www.reddit.com/r/modnews/comments/1tq9vxo/protecting_communities_from_scrapers_and_platform/">May 2026 r/modnews post</a>).</li>
+</ul>
+
+<h2>Your options, compared</h2>
+<table>
+<tr><th>Option</th><th>Good</th><th>Watch out</th></tr>
+<tr><td><b>Feedly</b></td><td>Has a commercial agreement with Reddit and says its Reddit feeds keep working (<a href="https://www.goldenhillsoftware.com/2026/10/correction-regarding-reddits-rss-feed-shutdown/">Golden Hill Software</a>).</td><td>Only inside Feedly. Some users report “Failed to connect to Reddit” errors in October 2026. Search and private feeds are limited.</td></tr>
+<tr><td><b>Self-hosted RSSHub, Redlib or RSS-Bridge</b></td><td>Free, you own it, outputs normal RSS.</td><td>Needs a server at home: Reddit blocks data-center IPs. Breaks whenever Reddit changes, and depends on access Reddit is closing.</td></tr>
+<tr><td><b>Reddit’s own app</b></td><td>Follow communities and turn on notifications.</td><td>No chronological all-in-one view of exactly what you follow, no keyword filters, no folders.</td></tr>
+<tr><td><b>Subwise</b> (browser extension)</td><td>Reads Reddit as you, from your browser. One reader, unread counts, folders, filters, notifications. Imports your old RSS links. Free for 10 feeds.</td><td>Works while your browser is open. Doesn’t produce an RSS URL for other readers.</td></tr>
+</table>
+
+<h2>Keep your feeds with Subwise, step by step</h2>
+<div class="cta"><a class="btn primary" aria-disabled="true" title="In store review">Add to Chrome · in review</a><a class="btn primary" aria-disabled="true" title="In store review">Add to Edge · in review</a><a class="btn primary" aria-disabled="true" title="In store review">Add to Firefox · in review</a></div>
+<ol class="steps">
+<li><b>Install Subwise</b> for Chrome, Edge or Firefox, and make sure you’re logged in to Reddit in that browser. Subwise reads Reddit as you, through your own session, so there’s no API key or password to enter.</li>
+<li><b>Paste your old Reddit RSS links</b> on the welcome page, or open Settings → Import &amp; export and choose the OPML file from your reader. Subwise converts each link into a follow and keeps your folders.</li>
+<li><b>Read.</b> New posts appear in the Subwise reader (a tab, or the side panel) with unread counts. Turn on notifications for the feeds you don’t want to miss.</li>
+</ol>
+<div class="note">Do it before November 13, while you can still see your old feed list. After the switch-off your reader will only show errors, but an exported OPML file still works for importing.</div>
+
+<h2>Reddit RSS URL cheat sheet</h2>
+<p>Each old feed address and what it becomes in Subwise. You can paste any of them as they are.</p>
+<table>
+<tr><th>Old RSS address</th><th>Follows</th></tr>
+<tr><td><code>reddit.com/r/selfhosted/.rss</code></td><td>r/selfhosted, hot posts</td></tr>
+<tr><td><code>reddit.com/r/selfhosted/new/.rss</code></td><td>r/selfhosted, every new post</td></tr>
+<tr><td><code>reddit.com/r/selfhosted/top/.rss?t=week</code></td><td>Top posts of the week</td></tr>
+<tr><td><code>reddit.com/r/rss+feedly+inoreader/.rss</code></td><td>Several subreddits as one feed</td></tr>
+<tr><td><code>reddit.com/r/x/search.rss?q=docker&amp;restrict_sr=on</code></td><td>A search inside one subreddit</td></tr>
+<tr><td><code>reddit.com/search.rss?q="rss reader"</code></td><td>A search across Reddit</td></tr>
+<tr><td><code>reddit.com/user/name/.rss</code>, <code>/submitted/.rss</code>, <code>/comments/.rss</code></td><td>A user’s posts and/or comments</td></tr>
+<tr><td><code>reddit.com/user/name/m/multi/.rss</code></td><td>A multireddit</td></tr>
+<tr><td><code>reddit.com/r/x/comments/abc123/.rss</code></td><td>New comments on one post</td></tr>
+<tr><td><code>reddit.com/r/x/comments/.rss</code></td><td>Every new comment in a subreddit</td></tr>
+<tr><td><code>reddit.com/domain/github.com/.rss</code></td><td>Posts linking to a website</td></tr>
+<tr><td><code>reddit.com/user/name/saved.rss?feed=…</code>, <code>/message/inbox/.rss?feed=…</code>, <code>/.rss?feed=…</code></td><td>Your saved posts, inbox and front page, read through your session (the secret token is dropped)</td></tr>
+</table>
+
+<h2>Questions</h2>
+<div class="faq">
+<details><summary>Will Subwise get my account banned?</summary><p>Subwise is designed to look and behave like a person: by default a few requests per feed per hour, an overall cap of about one request a minute, and a full stop when Reddit pushes back. It never posts or votes, and it doesn’t try to get past Reddit’s checks. Reddit hasn’t published rules for extensions, so no tool can promise more than that.</p></details>
+<details><summary>Why not just give me a new RSS URL?</summary><p>Publishing Reddit as a public feed for other services to pull is exactly what Reddit is shutting down, and it would put your account and the extension at risk. Subwise keeps your feeds in its own reader. Pro webhooks can push new posts to Discord, Slack, ntfy or your automations.</p></details>
+<details><summary>What about Firefox?</summary><p>Subwise works in Firefox too, with the reader in a tab or in Firefox’s sidebar.</p></details>
+</div>
+</div></article>
+<footer><div class="wrap">
+  <span>© 2026 Cedar Labs</span>
+  <a href="privacy.html">Privacy</a>
+  <a href="support.html">Support</a>
+  <a href="https://github.com/nkiro33/subwise/issues">Report a problem</a>
+  <span>Subwise is not affiliated with, endorsed by, or sponsored by Reddit, Inc.</span>
+</div></footer>
+</body>
+</html>

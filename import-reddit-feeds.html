@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Move your Reddit feeds out of Feedly, Inoreader or NetNewsWire</title>
+<meta name="description" content="Export your Reddit RSS feeds from Feedly, Inoreader, NetNewsWire, FreshRSS or Miniflux as OPML and import them into Subwise before Reddit RSS ends on November 13, 2026.">
+<link rel="canonical" href="https://nkiro33.github.io/subwise/import-reddit-feeds.html">
+<link rel="icon" href="img/favicon-32.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Move your Reddit feeds out of Feedly, Inoreader or NetNewsWire">
+<meta property="og:description" content="Export your Reddit RSS feeds from Feedly, Inoreader, NetNewsWire, FreshRSS or Miniflux as OPML and import them into Subwise before Reddit RSS ends on November 13, 2026.">
+<meta property="og:url" content="https://nkiro33.github.io/subwise/import-reddit-feeds.html">
+<meta property="og:image" content="https://nkiro33.github.io/subwise/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="img/icon.svg" alt="">Subwise</a>
+  <nav><a href="reddit-rss-alternative.html">Reddit RSS is gone</a><a href="replace-reddit-search-rss.html">Search feeds</a><a href="reddit-keyword-alerts.html">Keyword alerts</a><a href="import-reddit-feeds.html">Import</a><a href="support.html">Help</a></nav>
+</div></header>
+<article><div class="narrow">
+<h1>Move your Reddit feeds out of your RSS reader</h1>
+<p class="meta">Updated 2026-10-15</p>
+<p>Every RSS reader can export your subscriptions as an <b>OPML</b> file. Subwise reads that file, picks out the Reddit feeds, converts each one, and keeps your folders. Everything else in the file is ignored, so you can keep using your reader for the rest of the web.</p>
+
+<h2>1. Export from your reader</h2>
+<table>
+<tr><th>Reader</th><th>Where</th></tr>
+<tr><td>Feedly</td><td>Settings → <i>OPML</i> → Export, or open <code>feedly.com/i/opml</code></td></tr>
+<tr><td>Inoreader</td><td>Preferences → <i>Import/Export</i> → Export OPML</td></tr>
+<tr><td>NetNewsWire</td><td>File → <i>Export Subscriptions…</i></td></tr>
+<tr><td>The Old Reader, NewsBlur</td><td>Settings → <i>Export</i> (OPML)</td></tr>
+<tr><td>FreshRSS</td><td>Subscription management → <i>Import / export</i> → Export</td></tr>
+<tr><td>Miniflux</td><td>Settings → <i>Import</i> page → Export subscriptions</td></tr>
+<tr><td>Tiny Tiny RSS</td><td>Preferences → Feeds → <i>OPML</i> → Export</td></tr>
+<tr><td>Thunderbird</td><td>Right-click the feed account → Subscribe → Export</td></tr>
+</table>
+<p>No OPML? Copy the Reddit feed addresses one by one and paste them, one per line. Subwise also accepts plain names like <code>r/selfhosted</code>.</p>
+
+<h2>2. Import into Subwise</h2>
+<div class="cta"><a class="btn primary" aria-disabled="true" title="In store review">Add to Chrome · in review</a><a class="btn primary" aria-disabled="true" title="In store review">Add to Edge · in review</a><a class="btn primary" aria-disabled="true" title="In store review">Add to Firefox · in review</a></div>
+<ol class="steps">
+<li>Open Subwise’s Settings → <b>Import &amp; export</b>.</li>
+<li>Click <b>Choose OPML file…</b> (or paste addresses) and then <b>Preview</b>. You’ll see what each feed becomes, the folder it goes in, and anything that was skipped and why.</li>
+<li>Click <b>Import selected</b>. Subwise checks the new feeds gradually over the next minutes, to stay gentle on Reddit.</li>
+</ol>
+<img src="img/2-import.jpg" alt="Subwise import preview" loading="lazy" width="1600" height="1000">
+<div class="note">The free plan follows 10 subreddits, users or searches. If your file has more, they’re all added and the extra ones wait, paused, until you upgrade, so you don’t lose your list.</div>
+
+<h2>What converts</h2>
+<p>Subreddit feeds in any sort, combined subreddits, searches, user posts and comments, multireddits, comment threads, subreddit comment feeds, domain feeds, and your private front page, saved posts and inbox. Private feed tokens (<code>feed=…</code>) are dropped; Subwise reads those feeds through your logged-in session. Moderator queue feeds aren’t supported.</p>
+</div></article>
+<footer><div class="wrap">
+  <span>© 2026 Cedar Labs</span>
+  <a href="privacy.html">Privacy</a>
+  <a href="support.html">Support</a>
+  <a href="https://github.com/nkiro33/subwise/issues">Report a problem</a>
+  <span>Subwise is not affiliated with, endorsed by, or sponsored by Reddit, Inc.</span>
+</div></footer>
+</body>
+</html>

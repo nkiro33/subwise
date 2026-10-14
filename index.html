@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Subwise: Reddit RSS replacement, subreddit notifier and keyword alerts</title>
+<meta name="description" content="Reddit RSS ends on November 13, 2026. Subwise is a browser extension that keeps your subreddit, search and user feeds working, with unread counts, filters, notifications and keyword alerts.">
+<link rel="canonical" href="https://nkiro33.github.io/subwise/">
+<link rel="icon" href="img/favicon-32.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Subwise: Reddit RSS replacement, subreddit notifier and keyword alerts">
+<meta property="og:description" content="Reddit RSS ends on November 13, 2026. Subwise is a browser extension that keeps your subreddit, search and user feeds working, with unread counts, filters, notifications and keyword alerts.">
+<meta property="og:url" content="https://nkiro33.github.io/subwise/">
+<meta property="og:image" content="https://nkiro33.github.io/subwise/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Subwise","applicationCategory":"BrowserApplication","operatingSystem":"Chrome, Edge, Firefox","description":"Follow subreddits, users and searches after Reddit RSS ends.","offers":[{"@type":"Offer","price":"0","priceCurrency":"USD"},{"@type":"Offer","price":"3","priceCurrency":"USD","description":"Pro, monthly"}]}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="img/icon.svg" alt="">Subwise</a>
+  <nav><a href="reddit-rss-alternative.html">Reddit RSS is gone</a><a href="replace-reddit-search-rss.html">Search feeds</a><a href="reddit-keyword-alerts.html">Keyword alerts</a><a href="import-reddit-feeds.html">Import</a><a href="support.html">Help</a></nav>
+</div></header>
+<section class="hero"><div class="wrap">
+  <span class="badge">Reddit RSS ends November 13, 2026</span>
+  <h1>Your Reddit feeds, after RSS</h1>
+  <p class="lead">Follow subreddits, users and searches in one reader, with unread counts, filters and notifications. Bring your old RSS links over in one paste. Free for 10 feeds.</p>
+  <div class="cta"><a class="btn ghost" aria-disabled="true" title="In store review">Add to Chrome · in review</a><a class="btn ghost" aria-disabled="true" title="In store review">Add to Edge · in review</a><a class="btn ghost" aria-disabled="true" title="In store review">Add to Firefox · in review</a></div>
+  <small>Chrome · Edge · Firefox · No account · Your data stays in your browser</small>
+  <img class="shot" src="img/1-reader.jpg" alt="The Subwise reader showing unread posts from several subreddits, with folders and unread counts" width="1600" height="1000">
+</div></section>
+
+<section><div class="narrow">
+  <h2>What’s happening to Reddit RSS</h2>
+  <p>On September 30, 2026, Reddit announced it will stop supporting RSS feeds on <b>November 13, 2026</b>, and said that if you use RSS for anything outside a community you moderate, there is no replacement (<a href="https://www.reddit.com/r/modnews/comments/1wubgvt/continuing_our_infrastructure_updates_whats/">Reddit’s announcement in r/modnews</a>; <a href="https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/">TechCrunch</a>). Its public API stops taking new requests on October 31 and closes in March 2027 (<a href="https://www.reddit.com/r/redditdev/comments/1wubcvf/moving_data_api_apps_to_the_developer_platform/">r/redditdev</a>).</p>
+  <p>Reading Reddit while logged in is not affected. Subwise is built on exactly that: it reads the subreddits, users and searches you follow <b>through your own logged-in browser session</b>, politely, and shows them in one place.</p>
+  <p><a href="reddit-rss-alternative.html">Read the full guide: Reddit RSS is gone, here’s how to keep following subreddits →</a></p>
+</div></section>
+
+<section class="soft"><div class="wrap">
+  <h2>Everything your RSS reader did for Reddit, and more</h2>
+  <div class="grid3">
+    <div class="card"><h3>One paste to migrate</h3><p>Paste your old <code>.rss</code> links or open an OPML file from Feedly, Inoreader, NetNewsWire, FreshRSS or Miniflux. Subreddits, searches, users, multireddits, threads, saved posts and inbox feeds convert automatically.</p></div>
+    <div class="card"><h3>A reader built for Reddit</h3><p>Unread counts, folders, stars, search, score and comment counts, keyboard shortcuts, light and dark themes. In a tab, the side panel or the Firefox sidebar.</p></div>
+    <div class="card"><h3>Only the posts you want</h3><p>Per-feed filters for keywords, flairs, minimum score or comments, NSFW and pinned posts. “Show r/x posts once they reach 100 upvotes” works.</p></div>
+    <div class="card"><h3>Notifications that matter</h3><p>Desktop notifications per feed, and an unread count on the toolbar icon. Every post opens on reddit.com.</p></div>
+    <div class="card"><h3>Keyword alerts (Pro)</h3><p>Hear about mentions of your product, name or topic across all of Reddit, with webhooks to Discord, Slack, ntfy, n8n or Zapier, and CSV/JSON export.</p></div>
+    <div class="card"><h3>Private by design</h3><p>No Subwise servers, no account, no tracking. Feeds and posts stay in your browser. Only titles, links and short snippets are stored, and old ones are cleaned up.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap split">
+  <div><h2>Bring your Reddit feeds over in one paste</h2>
+  <p>Subwise understands every kind of Reddit RSS address: <code>/r/x/.rss</code>, <code>/r/x/new/.rss</code>, <code>/r/a+b/.rss</code>, <code>search.rss?q=…</code>, user and multireddit feeds, comment threads, and the private saved, inbox and front-page feeds. Private links lose their secret <code>feed=</code> token; Subwise reads those through your session instead.</p>
+  <p><a href="import-reddit-feeds.html">How to export from Feedly, Inoreader or NetNewsWire →</a></p></div>
+  <img src="img/2-import.jpg" alt="Import screen converting old Reddit RSS links into Subwise feeds" loading="lazy" width="1600" height="1000">
+</div></section>
+
+<section class="soft"><div class="wrap split">
+  <img src="img/3-alerts.jpg" alt="Keyword alert matches in the Subwise reader" loading="lazy" width="1600" height="1000">
+  <div><h2>Keyword alerts across Reddit</h2>
+  <p>GummySearch has closed and F5Bot depends on the API that’s ending. Subwise Pro watches Reddit search and the feeds you follow for the words you care about, and tells you on your desktop, in Discord or Slack, on your phone through ntfy, or in your n8n and Zapier flows.</p>
+  <p><a href="reddit-keyword-alerts.html">Reddit keyword alerts after GummySearch →</a></p></div>
+</div></section>
+
+<section><div class="narrow">
+  <h2>Gentle on Reddit, by design</h2>
+  <ul class="checks">
+    <li>Reads only what you follow, as you, from your browser. It pauses while you’re logged out.</li>
+    <li>Each feed is checked every 30 minutes by default and never more than every 10.</li>
+    <li>All feeds share an hourly limit (about one request a minute), and quiet subreddits are combined into one request.</li>
+    <li>If Reddit says “slow down” or shows a check page, Subwise stops and waits, longer each time. It never tries to get around Reddit’s checks.</li>
+    <li>It stores titles, links and short snippets on your device, and every post links back to reddit.com.</li>
+  </ul>
+</div></section>
+
+<section class="soft" id="pricing"><div class="wrap">
+  <h2>Free for 10 feeds. Pro when you need more.</h2>
+  <div class="price-grid">
+    <div class="card"><h3>Free</h3><div class="price">$0</div><p>Follow up to 10 subreddits, users or searches. Reader, filters, notifications, import and export of your feed list.</p></div>
+    <div class="card"><h3>Pro, monthly</h3><div class="price">$3<small>/month</small></div><p>Unlimited feeds, keyword alerts across Reddit, webhooks and CSV/JSON export. Cancel anytime.</p></div>
+    <div class="card"><h3>Pro, yearly</h3><div class="price">$24<small>/year</small></div><p>Same as monthly, 33% less.</p></div>
+    <div class="card"><h3>Pro, lifetime</h3><div class="price">$39<small> once</small></div><p>Pay once, every future update included.</p></div>
+  </div>
+  <p class="small" style="margin-top:16px">Payments by Gumroad. 30-day money-back guarantee. Buy from inside the extension (Settings → Pro).</p>
+</div></section>
+
+<section><div class="narrow">
+  <h2>Guides</h2>
+  <div class="grid3 guides">
+    <a class="card" href="reddit-rss-alternative.html"><h3>Reddit RSS is gone</h3><p>How to keep following subreddits after November 13, 2026, and what each option costs you.</p></a>
+    <a class="card" href="replace-reddit-search-rss.html"><h3>Replace Reddit search feeds</h3><p>Turn your <code>search.rss</code> feeds into searches that keep working.</p></a>
+    <a class="card" href="reddit-keyword-alerts.html"><h3>Keyword alerts after GummySearch</h3><p>Monitor Reddit for your product, brand or topic.</p></a>
+    <a class="card" href="import-reddit-feeds.html"><h3>Import from your RSS reader</h3><p>Feedly, Inoreader, NetNewsWire, FreshRSS, Miniflux.</p></a>
+  </div>
+</div></section>
+
+<section class="soft"><div class="narrow faq">
+  <h2>Questions</h2>
+  <details><summary>Do I need a Reddit account?</summary><p>Yes. Reddit stopped serving its data pages (<code>.json</code>) to logged-out visitors in May 2026, and Subwise only reads Reddit as you, through your logged-in session. A free account that never posts is enough.</p></details>
+  <details><summary>Can my Reddit account get in trouble?</summary><p>Subwise behaves like a person leaving a Reddit tab open: a few requests an hour per feed, an overall cap of about one a minute, and an immediate stop if Reddit pushes back. It doesn’t post, vote or comment, and it never works around Reddit’s checks. Reddit hasn’t published rules for browser extensions, so we keep the footprint small on purpose.</p></details>
+  <details><summary>Does it give me an RSS feed URL for my reader?</summary><p>No. Republishing Reddit as a public feed is exactly what Reddit is shutting down, so Subwise keeps your feeds in its own reader instead. Pro webhooks can push new posts (titles, links, short snippets) to Discord, Slack, ntfy or your automations.</p></details>
+  <details><summary>Does it work when my browser is closed?</summary><p>No. Subwise runs in your browser, so it checks while the browser is open and catches up when you open it again.</p></details>
+  <details><summary>Where is my data?</summary><p>In your browser only. There are no Subwise servers. See the <a href="privacy.html">privacy policy</a>.</p></details>
+</div></section>
+<footer><div class="wrap">
+  <span>© 2026 Cedar Labs</span>
+  <a href="privacy.html">Privacy</a>
+  <a href="support.html">Support</a>
+  <a href="https://github.com/nkiro33/subwise/issues">Report a problem</a>
+  <span>Subwise is not affiliated with, endorsed by, or sponsored by Reddit, Inc.</span>
+</div></footer>
+</body>
+</html>

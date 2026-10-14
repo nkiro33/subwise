@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reddit keyword alerts after GummySearch: monitor mentions of your product</title>
+<meta name="description" content="GummySearch closed and Reddit’s API is ending. How to get alerts when Reddit mentions your product, brand or topic, with Discord, Slack, ntfy and n8n webhooks.">
+<link rel="canonical" href="https://nkiro33.github.io/subwise/reddit-keyword-alerts.html">
+<link rel="icon" href="img/favicon-32.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Reddit keyword alerts after GummySearch: monitor mentions of your product">
+<meta property="og:description" content="GummySearch closed and Reddit’s API is ending. How to get alerts when Reddit mentions your product, brand or topic, with Discord, Slack, ntfy and n8n webhooks.">
+<meta property="og:url" content="https://nkiro33.github.io/subwise/reddit-keyword-alerts.html">
+<meta property="og:image" content="https://nkiro33.github.io/subwise/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="img/icon.svg" alt="">Subwise</a>
+  <nav><a href="reddit-rss-alternative.html">Reddit RSS is gone</a><a href="replace-reddit-search-rss.html">Search feeds</a><a href="reddit-keyword-alerts.html">Keyword alerts</a><a href="import-reddit-feeds.html">Import</a><a href="support.html">Help</a></nav>
+</div></header>
+<article><div class="narrow">
+<h1>Reddit keyword alerts after GummySearch</h1>
+<p class="meta">Updated 2026-10-15</p>
+<p>Founders and marketers used GummySearch, F5Bot or Syften to hear when Reddit mentioned their product. GummySearch has closed and deletes its data on December 1, 2026 (<a href="https://gummysearch.com/closing-time/">GummySearch’s closing notice</a>). Hosted tools that read Reddit from their own servers now need a commercial deal with Reddit, because the public API closes to unregistered apps in 2027 (<a href="https://www.reddit.com/r/redditdev/comments/1wubcvf/moving_data_api_apps_to_the_developer_platform/">r/redditdev</a>).</p>
+<p>Subwise takes a different route: it runs in <b>your</b> browser and reads Reddit through <b>your</b> logged-in session, so there’s no server in the middle and nothing to shut down.</p>
+
+<h2>Set up an alert</h2>
+<div class="cta"><a class="btn primary" aria-disabled="true" title="In store review">Add to Chrome · in review</a><a class="btn primary" aria-disabled="true" title="In store review">Add to Edge · in review</a><a class="btn primary" aria-disabled="true" title="In store review">Add to Firefox · in review</a></div>
+<ol class="steps">
+<li>Install Subwise and get Pro (from $3/month), then open Settings → <b>Keyword alerts</b> → <b>New alert</b>.</li>
+<li>Type your keywords, separated by commas: <code>yourproduct, "your product", competitor</code>. Add words to ignore (<code>hiring, giveaway</code>), and subreddits if you only care about some.</li>
+<li>Choose where to look: all of Reddit through search, the feeds you follow, or both (recommended).</li>
+<li>Choose how to hear about it: desktop notification, and any webhooks you add (Discord, Slack, ntfy, n8n, Zapier, Make).</li>
+</ol>
+<p>Matches collect under <b>Keyword alerts</b> in the reader, with the matched words highlighted, and export to CSV or JSON for your spreadsheet or CRM.</p>
+<img src="img/3-alerts.jpg" alt="Keyword alert matches in Subwise" loading="lazy" width="1600" height="1000">
+
+<h2>Webhook formats</h2>
+<p>Webhooks send only the title, the Reddit link, the subreddit, the author, the score, the comment count, the time and a snippet of at most 200 characters.</p>
+<ul>
+<li><b>Discord:</b> one message with up to 10 embeds.</li>
+<li><b>Slack:</b> one message with links.</li>
+<li><b>ntfy:</b> one push per post, tapping it opens Reddit.</li>
+<li><b>n8n, Zapier, Make, anything else:</b> JSON, <code>{ "source": "subwise", "feed": "…", "items": [ { "title", "url", "subreddit", "author", "created", "score", "comments", "snippet" } ] }</code></li>
+</ul>
+
+<h2>How it compares</h2>
+<table>
+<tr><th></th><th>Subwise Pro</th><th>Hosted monitors</th></tr>
+<tr><td>Price</td><td>$3/month or $39 once</td><td>about $9–20/month</td></tr>
+<tr><td>Where it runs</td><td>Your browser, your Reddit session</td><td>Their servers; depends on a deal with Reddit</td></tr>
+<tr><td>When the browser is closed</td><td>Catches up when you open it</td><td>Keeps running</td></tr>
+<tr><td>Comments</td><td>Posts (titles and text)</td><td>Often posts and comments</td></tr>
+</table>
+</div></article>
+<footer><div class="wrap">
+  <span>© 2026 Cedar Labs</span>
+  <a href="privacy.html">Privacy</a>
+  <a href="support.html">Support</a>
+  <a href="https://github.com/nkiro33/subwise/issues">Report a problem</a>
+  <span>Subwise is not affiliated with, endorsed by, or sponsored by Reddit, Inc.</span>
+</div></footer>
+</body>
+</html>
