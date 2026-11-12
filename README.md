@@ -2,7 +2,7 @@
 
 Website, guides and support for **[Subwise](https://nkiro33.github.io/subwise/)**, a browser extension that keeps your Reddit subreddit, search and user feeds working after Reddit ends RSS on November 13, 2026, with unread counts, filters, notifications and keyword alerts.
 
-Chrome, Edge and Firefox versions are in store review.
+Get it for [Chrome](https://chromewebstore.google.com/detail/mabkemiilfppfpgmgajnjgkemgonjhcn), [Edge](https://microsoftedge.microsoft.com/addons/detail/ghckfjpcpcoimbggmikcpidoipdnkmbn) or [Firefox](https://addons.mozilla.org/firefox/addon/subwise/).
 
 ## Guides
 
